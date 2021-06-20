@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
+  <script src="https://kit.fontawesome.com/7df4c0e0e4.js" crossorigin="anonymous"></script>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 
@@ -16,7 +17,10 @@
 
 <body>
   <div class="wrapper">
-    <header>
+    <header class="header">
+      <div class="header-logo">
+        <img class="header-logo__img" alt="logo" src="/images/logo.svg">
+      </div>
       <a href="#" class="button header__button">Try it free</a>
     </header>
 
@@ -30,95 +34,114 @@
       <a href="#" class="button welcom-section__button">
         Get Started For Free
       </a>
+
+      <div class="welcom-section__charts-img-wrapper">
+        <img class="welcom-section__charts-img" src="/images/screen-mockups.svg" alt="">
+      </div>
+
+
+      <div class="welcom-section__tile-left">
+        <img class="welcom-section__communities-img" src="/images/icon-communities.svg" alt="">
+        <h2 class="welcom-section__communities-title">1.4k+</h2>
+        <span class="welcom-section__span">Communities Formed</span>
+      </div>
+
+      <div class="welcom-section__tile-right">
+        <img class="welcom-section__messages-img" src="/images/icon-messages.svg" alt="">
+        <h2 class="welcom-section__communities-title">2.7m+</h2>
+        <span class="welcom-section__span">Messages Sent</span>
+      </div>
     </section>
 
-    <div class="welcom-section__img">
-      <img src="/images/screen-mockups.svg" alt="">
-    </div>
 
-
-    <div class="welcom-section__tile-left">
-      <h2>1.4k+</h2>
-      <span class="welcom-section__spam">Communities Formed</span>
-    </div>
-
-    <div class="welcom-section__tile-right">
-      <h2>2.7m+</h2>
-      <span class="welcom-section__spam">Messages Sent</span>
-    </div>
 
     <main class="articles-list">
-      <div class="article-wrapper article-wrapper--top">
-        <article class="article articles-list__article">
+      <div class="article-wrapper article-wrapper--grow">
+        <img class="article-grow-mobile-bg-top" src="/images/bg-section-top-mobile-1.svg" alt="">
+        <div class="article-img-wrapper article-img-wrapper--grow">
+          <img class="article-img" src="/images/illustration-grow-together.svg" alt='picture of two people'>
+        </div>
+        <article class="article article--grow">
           <h2 class="article__title">Grow Together</h2>
           <p class="article__text">
             Generate meaningful discussions with your audience and build a strong, loyal community.
             Think of the insightful conversations you miss out on with a feedback form.
           </p>
         </article>
-        <div class="article-img-wrapper">
-          <img src="/images/illustration-grow-together.svg" alt='picture of two people'>
-        </div>
+        <img class="article-grow-mobile-bg-bottom" src="/images/bg-section-bottom-mobile-1.svg" alt="">
+
       </div>
 
-      <div class="article-wrapper ">
-        <article class="article articles-list__article">
+      <div class="article-wrapper article-wrapper--flowing">
+        <div class="article-img-wrapper">
+          <img class="article-img" src="/images/illustration-flowing-conversation.svg" alt="">
+        </div>
+        <article class="article article--flowing">
           <h2 class="article__title">Flowing Conversations</h2>
           <p class="article__text">
             You wouldn't paginate a conversation in real life, so why do it online? Our threads have
             just-in-time loading for a more natural flow.
           </p>
         </article>
-        <div class="article-img-wrapper">
-          <img src="/images/illustration-flowing-conversation.svg" alt="">
-        </div>
+
       </div>
 
-      <div class="article-wrapper ">
-        <article class="article articles-list__article">
+      <div class="article-wrapper article-wrapper--users ">
+        <img class="article-users-mobile-bg-top" src="/images/bg-section-top-mobile-2.svg" alt="">
+        <div class="article-img-wrapper article-img-wrapper--users">
+          <img class="article-img" src="/images/illustration-your-users.svg" alt="">
+        </div>
+        <article class="article article--users">
           <h2 class="article__title">Your Users</h2>
           <p class="article__text">
             It takes no time at all to integrate Huddle with your app's authentication solution. This means,
             once signed in to your app, your users can start chatting immediately.
           </p>
         </article>
-        <div class="article-img-wrapper">
-          <img src="/images/illustration-your-users.svg" alt="">
-        </div>
+        <img class="article-users-mobile-bg-bottom" src="/images/bg-section-bottom-mobile-2.svg" alt="">
       </div>
       <article class="article register-article">
         <h2 class="register-article__title">Ready To Build Your Community?</h2>
         <a href="#" class="button register-article__button">Get Started For Free</a>
       </article>
     </main>
-
+    <img class="footer-bg-img" src="/images/bg-footer-top-mobile.svg" alt="">
     <footer class="footer">
+
+      <div class="newsletter">
+        <h2 class="newsletter__title">Newsletter</h2>
+        <p class="newsletter__text">
+          To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+          send you spam or pass on your email address
+        </p>
+        <input class="newsletter__input" type="email" required>
+        <a class="button newsletter__button">
+          Subscribe
+        </a>
+
+      </div>
       <div class="footer__company-info">
-        <div class="logo footer__logo"></div>
+        <div class="footer__logo">
+          <img class="footer__logo-img" src="/images/logo-footer.svg" alt="logo">
+        </div>
         <p class="footer__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
           vestibulum a, ultrices quis sem.
         </p>
-        <span class="footer__phone-number">Phone: +1-543-123-4567</span>
-        <span class="footer__email-addres">example@huddle.com</span>
+        <span class="footer__phone-number"><img class="footer__phone-number-img" src="/images/icon-phone.svg"
+            alt="phone number">Phone:
+          +1-543-123-4567</span>
+        <span class="footer__email-addres"><img class="footer__email-img" src="/images/icon-email.svg"
+            alt="email adres">example@huddle.com</span>
         <div class="socials">
-          <span>F</span>
-          <span>I</span>
-          <span>T</span>
+          <a class="button socials__button" href="index.html"><i class="fab fa-facebook-f"></i></a>
+          <a class="button socials__button" href="index.html"><i class="fab fa-instagram"></i></a>
+          <a class="button socials__button" href="index.html"><i class="fab fa-twitter"></i></a>
         </div>
 
       </div>
 
-      <div class="newsletter">
-        <h2 class="newsletter-title">Newsletter</h2>
-        <p class="newsletter_text"> Newsletter
-          To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
-          send you spam or pass on your email address</p>
-        <a class="button newsletter__button"></a>
-        Subscribe
-        </a>
-        <input type="email" required>
-      </div>
+
 
     </footer>
   </div>
