@@ -39,24 +39,27 @@
         <img class="welcom-section__charts-img" src="/images/screen-mockups.svg" alt="">
       </div>
 
+      <div class="welcom-section__tile-wrapper">
+        <div class="welcom-section__tile-left">
+          <img class="welcom-section__communities-img" src="/images/icon-communities.svg" alt="">
+          <h2 class="welcom-section__communities-title">1.4k+</h2>
+          <span class="welcom-section__span">Communities Formed</span>
+        </div>
 
-      <div class="welcom-section__tile-left">
-        <img class="welcom-section__communities-img" src="/images/icon-communities.svg" alt="">
-        <h2 class="welcom-section__communities-title">1.4k+</h2>
-        <span class="welcom-section__span">Communities Formed</span>
-      </div>
-
-      <div class="welcom-section__tile-right">
-        <img class="welcom-section__messages-img" src="/images/icon-messages.svg" alt="">
-        <h2 class="welcom-section__communities-title">2.7m+</h2>
-        <span class="welcom-section__span">Messages Sent</span>
+        <div class="welcom-section__tile-right">
+          <img class="welcom-section__messages-img" src="/images/icon-messages.svg" alt="">
+          <h2 class="welcom-section__communities-title">2.7m+</h2>
+          <span class="welcom-section__span">Messages Sent</span>
+        </div>
       </div>
     </section>
 
 
 
     <main class="articles-list">
+
       <div class="article-wrapper article-wrapper--grow">
+        <img class="article-grow-desktop-bg-top" src="/images/bg-section-top-desktop-1.svg" alt="">
         <img class="article-grow-mobile-bg-top" src="/images/bg-section-top-mobile-1.svg" alt="">
         <div class="article-img-wrapper article-img-wrapper--grow">
           <img class="article-img" src="/images/illustration-grow-together.svg" alt='picture of two people'>
@@ -69,6 +72,7 @@
           </p>
         </article>
         <img class="article-grow-mobile-bg-bottom" src="/images/bg-section-bottom-mobile-1.svg" alt="">
+        <img class="article-grow-desktop-bg-bottom" src="/images/bg-section-bottom-desktop-1.svg" alt="">
 
       </div>
 
@@ -87,6 +91,7 @@
       </div>
 
       <div class="article-wrapper article-wrapper--users ">
+        <img class="article-users-desktop-bg-top" src="/images/bg-section-top-desktop-2.svg" alt="">
         <img class="article-users-mobile-bg-top" src="/images/bg-section-top-mobile-2.svg" alt="">
         <div class="article-img-wrapper article-img-wrapper--users">
           <img class="article-img" src="/images/illustration-your-users.svg" alt="">
@@ -99,13 +104,17 @@
           </p>
         </article>
         <img class="article-users-mobile-bg-bottom" src="/images/bg-section-bottom-mobile-2.svg" alt="">
+        <img class="article-users-desktop-bg-bottom" src="/images/bg-section-bottom-desktop-2.svg" alt="">
       </div>
       <article class="article register-article">
         <h2 class="register-article__title">Ready To Build Your Community?</h2>
         <a href="#" class="button register-article__button">Get Started For Free</a>
       </article>
     </main>
+
     <img class="footer-bg-img" src="/images/bg-footer-top-mobile.svg" alt="">
+    <img class="footer-bg-img-desktop" src="/images/bg-footer-top-desktop.svg" alt="">
+
     <footer class="footer">
 
       <div class="newsletter">
@@ -114,11 +123,12 @@
           To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
           send you spam or pass on your email address
         </p>
-        <input class="newsletter__input" type="email" required>
-        <a class="button newsletter__button">
-          Subscribe
-        </a>
-
+        <form class="newsletter__form">
+          <input class="newsletter__input" type="email" required>
+          <button type="submit" class="button newsletter__button">
+            Subscribe
+          </button>
+        </form>
       </div>
       <div class="footer__company-info">
         <div class="footer__logo">
@@ -146,6 +156,7 @@
     </footer>
   </div>
 
+  <script src="main.js"></script>
 </body>
 
 </html>
